@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&family=Montserrat&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="./etch-a-sketch.png" type="image/x-icon">
+  <title>Pixel Sketch</title>
+</head>
+
+<body>
+  <h1>
+    Pixel Sketch
+  </h1>
+
+  <div id="pixel-sketch">
+    <div id="grid-container"></div>
+  </div>
+
+  <div id="control-panel">
+    <div class="slider">
+      <div id="pixel-count">16 x 16</div>
+      <input type="range" min="1" max="32" step="1" class="slider-input" id="grid-size" />
+      <div>
+        <label for="grid-size"></label>
+      </div>
+    </div>
+
+    <div class="input">
+      <input type="color" value="#000000" name="color-input" id="color-input">
+      <label for="color-input"></label>
+    </div>
+    <div class="input">
+      <button id="toggle-button">
+        Toggle Grid
+      </button>
+    </div>
+    <div class="input">
+      <button id="clear-button">Clear</button>
+    </div>
+    <div class="input">
+      <button id="reset-button">Reset</button>
+    </div>
+  </div>
+
+  <footer id="icon-ref">
+    <a href="https://www.flaticon.com/free-icons/draw" title="draw icons">Draw icon created by Freepik - Flaticon</a>
+  </footer>
+  <script type=text/javascript src="./script.js"></script>
+</body>
+
+</html>
